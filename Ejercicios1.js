@@ -416,9 +416,8 @@ pasarMayuscula(palabra);
 const palabra1 = "carLos vega";
 
 function primeraMayuscula(string) {
-    return string.split(' ').map(palabra => {
-        return palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase();
-    }).join(' ');
+    return string.split(' ').map(palabra => 
+        palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase()).join(' ');
 }
 
 let resultado = primeraMayuscula(palabra1);
