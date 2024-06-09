@@ -1,14 +1,4 @@
-               ,,                              ,,             ,,                    
-`7MM"""YMM     db                              db             db                    
-  MM    `7                                                                          
-  MM   d     `7MM  .gP"Ya  `7Mb,od8  ,p6"bo  `7MM   ,p6"bo  `7MM   ,pW"Wq.  ,pP"Ybd 
-  MMmmMM       MM ,M'   Yb   MM' "' 6M'  OO    MM  6M'  OO    MM  6W'   `Wb 8I   `" 
-  MM   Y  ,    MM 8M""""""   MM     8M         MM  8M         MM  8M     M8 `YMMMa. 
-  MM     ,M    MM YM.    ,   MM     YM.    ,   MM  YM.    ,   MM  YA.   ,A9 L.   I8 
-.JMMmmmmMMM    MM  `Mbmmd' .JMML.    YMbmd'  .JMML. YMbmd'  .JMML. `Ybmd9'  M9mmmP' 
-            QO MP                                                                   
-            `bmP     
-# Ejercicios de Lógica y Programación
+ # Ejercicios de Lógica y Programación
 Ejercicios desarrollados en JavaScript para ejercitar la programación.
 
 ## 1.- Invertir una cadena:
