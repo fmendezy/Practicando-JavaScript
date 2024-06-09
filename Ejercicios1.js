@@ -283,7 +283,7 @@ function countVocales(vocales){
 countVocales(palabra2)
 
 /*
-AAAAAAAAAAAAA
+ESTOY ENTERO LOCO
 /*
 ## 7.- Encontrar el segundo número más grande en un array:
 ●	Escribe una función que tome un array de números y devuelva el segundo número más grande.
