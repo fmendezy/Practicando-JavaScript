@@ -416,8 +416,11 @@ pasarMayuscula(palabra);
 const palabra1 = "carLos vega";
 
 function primeraMayuscula(string) {
-    return string.split(' ').map(palabra => 
-        palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase()).join(' ');
+    return string.split(' ').map(palabra => // separa palabras en array(.split), iteramos sobre cada palabra(.map)
+        palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase()).join(' '); 
+        // funcion flecha QUE, toma la primera letra (.charAt) de la palabra y la deja en mayuscula(toUpperCase)
+        // y el resto (.slice) de la palabra la deja en minuscula (toLowerCase)
+
 }
 
 let resultado = primeraMayuscula(palabra1);
@@ -486,10 +489,10 @@ let listaDos = [3,5,7,20,3,8,1,7, '23', '22'];
 
 function concatenarArrays(listaOne, listaTwo){
 
-    let listaConcatenada = listaOne.concat(listaTwo);
-    const dataArray = new Set(listaConcatenada);
-    let listaCorregida = [...dataArray];
-    return console.log(listaCorregida);
+    let listaConcatenada = listaOne.concat(listaTwo); // concatenamos ambas listas
+    const dataArray = new Set(listaConcatenada); // eliminamos los valores repetidos
+    let listaCorregida = [...dataArray]; // agregamos valores a nuevo array
+    return console.log(listaCorregida); // retornamos array
     
 }   
 concatenarArrays(listaUno, listaDos);
