@@ -11,7 +11,7 @@
             `bmP     
             
     Desarrollo de ejercicios de programación en JavaScript
-
+s
     // FIGURAS anscii
     https://fsymbols.com/es/arte-de-texto/#all_cats 
 
@@ -131,8 +131,6 @@ function eliminarDuplicados(lista){
 }
 eliminarDuplicados(lista);// resultado en consola [ 1, 9, 2, 3, 4, '22', 'Francisco' ]
 
-
-
 /*
 █▀▀ ▄▀█ █▀█ █░░ █▀█ █▀
 █▄▄ █▀█ █▀▄ █▄▄ █▄█ ▄█
@@ -145,7 +143,6 @@ function eliminarDuplicadosConSet(lista){
     return console.log(listaCorregida);
 }   
 eliminarDuplicadosConSet(listaOriginal);
-
 
 
 // esta funcion modifica la primera lista, no creando un array nuevo, pero mostrando los valores como los esperamos
@@ -183,7 +180,7 @@ buscandoaNemo(listDeNumeros);
 const listaValorAlto = [1, 3, 2, 9];
 
 function numeroMasAlto(){
-  return console.log(Math.max(...lista));
+    return console.log(Math.max(...lista));
 }
 
 numeroMasAlto(listaValorAlto);
@@ -245,12 +242,10 @@ function revertir(cadena) {
 revertir(cadenita); // llamamos la funcion
 
 
-
 /*
 ## 6.- Contar la cantidad de vocales en una cadena:
 ●	Escribe una función que tome una cadena y devuelva el número de vocales en la cadena.
 */
-
 
 /*
 █▀▀ █ ▄▀█ █▄░█ █░░ █░█ █▀▀ ▄▀█
@@ -282,9 +277,292 @@ function countVocales(vocales){
 
 countVocales(palabra2)
 
-/*
 
 /*
+_____________________$$$
+____________________$___$
+_____________________$$$
+_____________________$_$
+_____________________$_$
+___________________$$$_$$$
+_________________$$__$$$__$$$
+_______________$$__$$$$$$$___$
+______________$_______________$
+_____________$_________________$
+_____________$_________________$
+_____________$_____$$$$$$$$$$$$$$$
+_____________$____$_______________$
+_____________$____$___$$$$$$$$$$$$$
+_____________$___$___$___________$$$
+_____________$___$___$_$$$___$$$__$$
+_____________$___$___$_$$$___$$$__$$
+_____________$___$___$___________$$$
+_____________$____$___$$$$$$$$$$$$$
+_____________$_____$$$$$$$$$$$$$$
+_____________$_________________$
+_____________$____$$$$$$$$$$$$$$
+_____________$___$__$__$__$__$
+_____________$__$$$$$$$$$$$$$$
+_____________$__$___$__$__$__$
+_____________$___$$$$$$$$$$$$$$$
+____________$$$_________________$$$
+__________$$___$$$_________$$$$$___$$
+________$$________$$$$$$$$$__________$$$
+_______$__$$_____________________$$$$___$$
+____$$$$$___$$$$$$$$______$$$$$$$_______$_$
+__$______$$_________$$$$$$______________$_$$
+_$____$____$____________________________$_$_$
+_$_____$___$______________$$$$$$$$$$$___$_$_$$
+_$$$____$___$__$$$$$$$$$$$$__________$___$_$_$$
+$___$$$$____$__$_____________________$___$_$$_$
+$$$____$___$$__$_____________________$$__$_$__$
+$___$__$__$$___$______________________$__$$$__$
+$_____$$_$$____$_______________$$$____$__$_$__$
+
 ## 7.- Encontrar el segundo número más grande en un array:
 ●	Escribe una función que tome un array de números y devuelva el segundo número más grande.
 */
+
+/*
+█▀█ ▄▀█ █▄░█ █▀▀ █░█ █▀█
+█▀▀ █▀█ █░▀█ █▄▄ █▀█ █▄█
+*/
+let listDeNumeros2 = [10,20,30,40,50];
+
+function buscandoaNemo2(valorRecibido){
+    let maximo = Math.max(...valorRecibido);//busca el num mas grande del array
+    let indice = valorRecibido.indexOf(maximo);// encontramos el indice del numero mas grande del array
+    valorRecibido.splice(indice, 1);// elimina el numero mas grande del array con el indice obtenido anteriormente.
+    return console.log(Math.max(...valorRecibido));// retorna el segundo numero mas grande del array
+}
+buscandoaNemo2(listDeNumeros2);
+
+/*
+█▀▀ █ ▄▀█ █▄░█ █░░ █░█ █▀▀ ▄▀█
+█▄█ █ █▀█ █░▀█ █▄▄ █▄█ █▄▄ █▀█
+*/ 
+const listaOriginal3 = [1, 3, 2, 5, 6, 25,67,213123,788,45];
+
+function verNumMasAlto(list){
+    const encontrarIndice = list.length - 2;
+  console.log(listaOriginal3[encontrarIndice])
+}   
+
+verNumMasAlto(listaOriginal3)
+//todo malardo
+
+/*
+█▀▀ ▄▀█ █▀█ █░░ █▀█ █▀
+█▄▄ █▀█ █▀▄ █▄▄ █▄█ ▄█
+*/
+//FUNCION QUE MUESTRA EL 2DO VALOR MAS ALTO DE UN ARRAY
+const listaOriginalMasAlto = [1,3,4,6,7,88,3,22];
+
+function segMasAlto(lista){
+    const listaOr = listaOriginalMasAlto.sort((a, b) => b - a); //Ordena array de forma Descendente
+    return console.log(listaOr[1]); // Muestra el 2do objeto del array
+}
+
+segMasAlto(listaOriginalMasAlto);
+
+/*
+## 8.- Convertir la primera letra de cada palabra en mayúscula:
+●	Escribe una función que tome una cadena y devuelva la cadena con la primera letra de cada palabra en mayúscula.
+*/
+
+/*
+█▀█ ▄▀█ █▄░█ █▀▀ █░█ █▀█
+█▀▀ █▀█ █░▀█ █▄▄ █▀█ █▄█
+*/
+
+/*
+Referencias:
+    https://www.freecodecamp.org/espanol/news/tutorial-de-arraymap-de-javascript-como-iterar-a-atraves-de-elementos-en-un-arreglo-con-map/
+    https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+    https://www.w3schools.com/jsref/jsref_join.asp
+    https://tinchicus.com/2022/07/27/javascript-array-join/
+    https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+*/
+
+let cadena = "bartOlOmeo simPson";
+
+function primeraLetraMayuscula(cadena){
+    return console.log(cadena.split(' ')// Separamos el string en un array
+    .map(palabra => palabra// iteramos sobre cada palabra 
+    .charAt(0).toUpperCase()// convertimos la primera letra de cada palabra (posicion 0) en mayusculas (estamos trabajando la primera letra solamente)
+    + palabra.slice(1).toLowerCase())// unimos el resto de la palabra a la mayuscula que acabo de convertir
+    .join(' '));// se unen todas las demas palabras en un solo string
+}
+
+primeraLetraMayuscula(cadena);// resultado: Bartolomeo Simpson
+
+/*
+█▀▀ █ ▄▀█ █▄░█ █░░ █░█ █▀▀ ▄▀█
+█▄█ █ █▀█ █░▀█ █▄▄ █▄█ █▄▄ █▀█
+*/ 
+const palabra = 'palabrita' 
+function pasarMayuscula(string){
+const convertirAMayuscula = string[0].toUpperCase()
+console.log(convertirAMayuscula)
+}
+
+pasarMayuscula(palabra);
+
+
+/*
+█▀▀ ▄▀█ █▀█ █░░ █▀█ █▀
+█▄▄ █▀█ █▀▄ █▄▄ █▄█ ▄█
+*/
+const palabra1 = "carLos vega";
+
+function primeraMayuscula(string) {
+    return string.split(' ').map(palabra => {
+        return palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase();
+    }).join(' ');
+}
+
+let resultado = primeraMayuscula(palabra1);
+console.log(resultado); 
+
+
+/*
+## 9.- Fusionar dos arrays sin duplicados:
+●	Escribe una función que tome dos arrays y devuelva un nuevo array que contenga todos los elementos de ambos arrays, sin duplicados.
+*/
+
+/*
+█▀█ ▄▀█ █▄░█ █▀▀ █░█ █▀█
+█▀▀ █▀█ █░▀█ █▄▄ █▀█ █▄█
+*/
+let lista = [1,9,2,2,3,1,4,4,'22','22', "Francisco", "Francisco", "Francisco"];
+let lista2 = [1,9,2,2,3,1,4,4,'22','22', "Francisco", "Francisco", "Francisco"];
+
+function eliminarDuplicados2(lista,lista2){
+    let array = [];
+    let resultado = [];
+    for(let i = 0; i<lista.length; i++){
+        if(!array.includes(lista[i])){
+            array.push(lista[i]);
+        }
+    }
+    for(let i = 0; i<lista2.length; i++){
+        if(!array.includes(lista2[i])){
+            array.push(lista2[i]);
+        }
+    }
+    for(let i = 0; i<array.length; i++){
+        if(!resultado.includes(array[i])){
+            resultado.push(array[i]);
+        }
+    }
+    return console.log(resultado);
+}
+eliminarDuplicados2(lista,lista2);// resultado en consola [ 1, 9, 2, 3, 4, '22', 'Francisco' ]
+
+/*
+█▀▀ █ ▄▀█ █▄░█ █░░ █░█ █▀▀ ▄▀█
+█▄█ █ █▀█ █░▀█ █▄▄ █▄█ █▄▄ █▀█
+*/ 
+const arreglo1 = [1,2,3,4,5,5,6];
+const arreglo2 = [1,2,2,4,5,6,7];
+
+function fucionar(arreglouno, arreglodos){
+let fucionArreglos = arreglouno.concat(arreglodos);
+console.log(fucionArreglos);
+
+const dataArr = new Set(fucionArreglos);
+let result = [...dataArr];
+console.log(result); 
+
+}
+
+fucionar(arreglo1, arreglo2);
+
+/*
+█▀▀ ▄▀█ █▀█ █░░ █▀█ █▀
+█▄▄ █▀█ █▀▄ █▄▄ █▄█ ▄█
+*/
+let listaUno = [1,1,2,2,3,3,4,4, '22', '23'];
+let listaDos = [3,5,7,20,3,8,1,7, '23', '22'];
+
+function concatenarArrays(listaOne, listaTwo){
+
+    let listaConcatenada = listaOne.concat(listaTwo);
+    const dataArray = new Set(listaConcatenada);
+    let listaCorregida = [...dataArray];
+    return console.log(listaCorregida);
+    
+}   
+concatenarArrays(listaUno, listaDos);
+
+/*
+## 10.- Generar un array de números aleatorios:
+●	Escribe una función que tome dos argumentos, un número n y un número max, y devuelva un array de n números aleatorios entre 0 y max.
+**Desarrollado por **
+*/
+
+
+/*
+█▀█ ▄▀█ █▄░█ █▀▀ █░█ █▀█
+█▀▀ █▀█ █░▀█ █▄▄ █▀█ █▄█
+*/
+
+/*
+Referencias:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+    https://www.w3schools.com/js/js_random.asp
+    https://es.stackoverflow.com/questions/560867/obtener-un-n%C3%BAmero-aleatorio-dentro-de-un-rango-con-javascript
+*/
+function numerosAleatorios(min, max){
+    let array = [];
+    for(let i = 0; i < min; i++){
+        array.push(
+            Math.floor(
+                Math.random() * (max - min + 1)) + min);
+    }
+    return console.log(array);
+}
+numerosAleatorios(3,10);
+
+/*
+█▀▀ █ ▄▀█ █▄░█ █░░ █░█ █▀▀ ▄▀█
+█▄█ █ █▀█ █░▀█ █▄▄ █▄█ █▄▄ █▀█
+*/ 
+function numeroAleatorio(numeroN, numeroMax) {
+    let arreglito = [];
+    for (let i = 0; i < numeroN; i++) { 
+        let numeros = Math.floor(Math.random() * (numeroMax - numeroN + 1)) + numeroN;
+        arreglito.push(numeros);
+    }
+    console.log(arreglito);
+    return arreglito;
+}
+
+numeroAleatorio(20, 10);
+
+/*
+█▀▀ ▄▀█ █▀█ █░░ █▀█ █▀
+█▄▄ █▀█ █▀▄ █▄▄ █▄█ ▄█
+*/
+
+let n = 10; // variable de cantidad de veces que se creara un valor aleatorio
+let max = 100; // variable que indica el valor maximo a crear aleatoriamente
+
+function generarNumerosAleatorios(n, max) {
+    let numerosAleatorios = [];
+    for (let i = 0; i < n; i++) { //crea bucle for, para que repita "N" veces al bucle
+        let numeroAleatorio = Math.floor(Math.random() * (max + 1)); //crea aleatorio hasta el valor MAX
+        numerosAleatorios.push(numeroAleatorio); // se agrega el valor al Array "numerosAleatorios"
+    }
+    return console.log(numerosAleatorios); //Retorna valor de Array
+}
+
+generarNumerosAleatorios(n, max);
+
+
+███████╗██╗░░░░░  ███████╗██╗███╗░░██╗
+██╔════╝██║░░░░░  ██╔════╝██║████╗░██║
+█████╗░░██║░░░░░  █████╗░░██║██╔██╗██║
+██╔══╝░░██║░░░░░  ██╔══╝░░██║██║╚████║
+███████╗███████╗  ██║░░░░░██║██║░╚███║
+╚══════╝╚══════╝  ╚═╝░░░░░╚═╝╚═╝░░╚══╝
